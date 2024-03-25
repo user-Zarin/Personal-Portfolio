@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    /><link
+      href="https://fonts.googleapis.com/css2?family=Truculenta:opsz,wght@12..72,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/menu.css' rel='stylesheet'>
+  </head>
+  <body>
+    <header id="header">
+      <nav>
+        <div class="left"><img src="logo2.png" alt="logo" /></div>
+        <div class="right">
+          <ul id="sideMenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#edu">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#footer">Contact</a></li>
+            <i class="fas fa fa-close" onclick="closeMenu()" style="font-size:30px;color:white"></i>
+          </ul>
+          <i class="fas fa fa-home" onclick="openMenu()" id="home" style="font-size:30px;color: white;"></i>
+        </div>
+      </nav>
+    </header>
+    <div class="container">
+      <div class="first" id="first">
+        <div class="text">
+          <h1>
+            Zarin Khan <div class="info">Crafting my way to become a <u><b>Web Developer</b></u></div>
+          </h1>
+           <div class="btn">
+            <a href="./res.pdf" download="MyResume.pdf" ><button class="jc-centre">
+              <i class="material-icons" style="margin: 6px; ">download</i>download CV</button>
+            </a>
+          </div>
+        </div>
+        <div class="image">
+          <img src="main2.png" alt="main" />
+        </div>
+      </div>
+      <div class="second" id="edu">
+        <h1>Education </h1><hr>
+        <div class="edu">
+          <div class="ssc">
+           <p><u><h3>Class 10th </h3></u> 84.60%</p>
+          </div>
+          <div class="degree">
+            <u><h3>BCA</h3></u>
+            <h5> Bachelors in Computer Application</h5>
+            <ul>
+              <li>1st sem : 9.6 SGPA</li> 
+              <li>2nd sem : 9.5 SGPA</li>
+              <li>3rd sem : 8.9 SGPA </li>
+              <li>4th sem :persuing</li>
+            </ul>
+          </div>
+          <div class="hsc">
+           <p><u><h3>Class 12th</h3></u> 62.80%</p>
+          </div>
+        </div>
+      </div>
+      <div class="third" id="skills">
+        <div class="skills">
+          <h1>Skills</h1><hr>
+          <ul>
+            <li>HTML5</li>
+            <li>CSS</li>
+            <li>Javascript</li>
+            <li>Bootstrap</li>
+            <li>jQuery</li>
+            <li>C++ - Programming language</li>
+            <li>Python - Programming language</li>
+            <li>Data Structure</li>
+            <li>OOPs</li>
+            <li>SQL</li>
+            <li>Github</li>
+          </ul>
+        </div>
+      </div>
+      <div class="fourth" id="projects">
+        <h1>PROJECTS</h1><hr>
+        <div class="projects">
+        <div class="row1">
+            <div id="1">
+            <h2>Quran(Holy scripture) Website</h2>  
+            <p>A Web-Application build by fetching API.It Contains all chapter of QURAN(Holy book) with English and Arabic text</p>
+           <a href="https://github.com/user-Zarin/Quran_website" target="_blank"> <button>Github link</button></a>
+          </div>
+          <div id="2">
+            <h2>Flipkart clone</h2>
+            <p>A responsive Frontend of Flipkart's Website.It Contains few sections of product like dresses, footwear and handbags</p>
+            <a href="https://github.com/user-Zarin/Flipkart-clone" target="_blank"><button>Github link</button></a>
+          </div>
+          
+        </div>
+        <div class="row2">
+          <div id="3">
+             <h2>Portfolio</h2>
+            <p>The Personal Portfolio Website project aims to showcase my skills, experience, and projects in a visually appealing and informative manner. </p>
+            <a href="https://github.com/user-Zarin/Personal-Portfolio" target="_blank"><button>Github link</button></a>
+          </div>
+          <div id="4">
+             <h2>Alarm Clock</h2>
+            <p>Alarm Clock with functionality of setting time with reference of AM/PM.Implemented features like reset and stop.The alarm bell sounds at the set time on the clock</p>
+            <a href="https://github.com/user-Zarin/Alarm-clock" target="_blank"><button>Github link</button></a> 
+           </div>
+        </div>
+        </div>
+      </div>
+      
+    </div>
+    <footer id="footer">
+      <h1>Contact Details</h1>
+      <div class="contact">
+     <div class="one"> 
+      <div class="phone">
+        <i class="material-icons">phone</i>
+        <h4>+91 762099XXXX</h4>
+      </div>
+      <div class="mail">
+        <i class="material-icons" style="font-size: 25px ;padding-top: 4px; padding-right: 10px;">mail</i><h3>xarinkhan45@gmail.com</h3>
+      </div>
+    </div>
+      <div class="website">
+        <a href="https://leetcode.com/dev_zarin/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24">
+        <rect width="40px" height="40px" fill="none" />
+        <path fill="currentColor" d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104a5.35 5.35 0 0 0-.125.513a5.527 5.527 0 0 0 .062 2.362a5.83 5.83 0 0 0 .349 1.017a5.938 5.938 0 0 0 1.271 1.818l4.277 4.193l.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019l-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.523a2.545 2.545 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0 0 13.483 0m-2.866 12.815a1.38 1.38 0 0 0-1.38 1.382a1.38 1.38 0 0 0 1.38 1.382H20.79a1.38 1.38 0 0 0 1.38-1.382a1.38 1.38 0 0 0-1.38-1.382z" />
+        </svg>  Leetcode</a>
+        <a href="https://www.linkedin.com/in/zarin-khan-49a6ab244/" target="_blank"><i style="font-size:40px"class="fa fa-linkedin"></i>   Linkedin</a>
+        <a href="https://github.com/user-Zarin" target="_blank"><i style="font-size:40px"class="fa fa-github"></i>  Github</a>
+        
+        <a href="https://twitter.com/zareenkhan4545" target="_blank" ><i style="font-size:40px" class="fa fa-twitter"></i>   Twitter</a>
+        
+      </div>  
+        </div>
+        
+          <a href="./res.pdf" download="MyResume.pdf" id="download"><button class="jc-centre">
+          <i class="material-icons" style="padding-top: 3px;">download</i>download CV</button></a>
+        
+    </footer>
+    <script>
+      let sideMenu = document.getElementById("sideMenu");
+      let home = document.getElementById("home");
+      function openMenu(){
+        sideMenu.style.right = "0";
+        home.style.visibility="hidden";
+      }
+      function closeMenu(){
+        sideMenu.style.right = "-200px";
+        home.style.visibility="visible";
+      }
+    </script>
+  </body>
+
+</html>

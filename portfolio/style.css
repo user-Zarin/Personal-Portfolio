@@ -1,0 +1,347 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+nav{
+    background-image: linear-gradient(to left,rgb(6, 3, 14),rgba(228, 188, 233, 0.61));
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+nav .left img{
+    display: flex;
+    padding: 5px 5px;
+    margin-left: 20px;
+    width:100px;
+    font-size: large;
+} 
+nav ul li a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+nav li{
+    display: inline-block;
+    list-style: none;
+    padding: 20px 20px;
+    color: white;
+    cursor: pointer;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#home{
+    cursor: pointer;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.first{
+    margin:0px;
+    width: 100%;
+    justify-content: space-around;
+    background-image: linear-gradient(to left,rgb(6, 3, 14),rgba(228, 188, 233, 0.61));
+    display: flex;
+    flex-wrap:wrap-reverse;
+}
+.text{
+    margin: 80px 0px;
+    width: 50%;
+    display: flex;
+    align-items:space-around;
+    align-self: center;
+    justify-content:center;
+    flex-direction: column;
+}
+.btn button{
+    background-color: rgb(9, 163, 224);
+}
+.first h1{
+    font-size: 5em ;
+    color: rgba(49, 6, 22, 0.658);
+    text-shadow: 4px 4px 5px rgba(43, 15, 15, 0.616);
+}
+.first .text u{
+    font-size: 3rem;
+    color: rgba(115, 11, 141, 0.815);
+    text-shadow: 2px 2px 6px rgba(43, 5, 27, 0.699);
+}
+.first .info{
+    font-size: 2rem;
+    color: rgb(224, 22, 89);
+    font-family: "Truculenta", sans-serif;
+}
+.first img{
+    margin:2em;
+    padding: 0.5rem;
+    width:80%;
+    border: 3px solid rgba(236, 148, 33, 0.918);
+    border-radius:55%;
+}
+
+/* EDUCATION */
+.second h1{
+    text-align: center;
+    font-size: 60px;
+    color: rgb(239, 229, 248);
+    padding: 40px;
+}
+.second {
+    background-image: url("https://images.unsplash.com/photo-1497864149936-d3163f0c0f4b?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    display: flex;
+    flex-direction: column;
+}
+.second .ssc:hover, .hsc:hover, .second .degree:hover{
+    background-color: crimson;
+    color: rgb(244, 251, 255);
+    transform: translateY(-10px);
+}
+.second .edu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    list-style: none;
+}
+.second .ssc , .hsc{
+    margin:20px;
+  padding: 1.5%;
+  width: 250px;
+  text-align: center;
+  color: #621329d4;
+  font-size: 30px;
+  background: rgba(172, 163, 152, 0.74);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 7%;
+  font-family: cursive;
+  align-self: center;
+  transition: background 0.5s,transform 0.5s;
+}
+.second .degree{
+    width: 400px;
+    text-align: center;
+    color: #3e1349c9;
+    font-size: 30px;
+    background: rgba(251, 252, 255, 0.397);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 7%;
+    font-family: cursive;
+    transition: background 0.5s,transform 0.5s;
+}
+.second .degree ul{
+    list-style: none;
+}
+/* Skills */
+.third h1{
+    text-align: center;
+    padding: 1.5rem;
+    color: white;
+    text-shadow: 2px 3px 6px blue;
+}
+.third .skills{
+    background-image: url("https://images.unsplash.com/photo-1497633762265-9d179a990aa6?q=80&w=1473&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    padding:6rem;
+    display: flex;
+    font-weight: 600;
+    font-size: 1.5rem;
+    align-content: flex-end;
+    font-family: "Englebert", cursive;
+    color: white;
+    text-shadow: -1px 1px 0 #0820f8, 1px 1px 0 #0919f0, 1px -1px 0 #2b2930, -1px -1px 0 #3e09fd;
+    flex-wrap: wrap; 
+    flex-direction: column;
+    line-height: 3rem;
+}
+/* PROJECTS */
+.fourth{
+    background: url("https://images.unsplash.com/photo-1531379410502-63bfe8cdaf6f?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+}
+.fourth h1{
+    text-align: center;
+    color: purple;
+    padding-top: 4rem;
+    padding-bottom:4rem ;
+}
+.fourth .projects{
+    display: flex;
+    flex-direction: column;
+}
+.fourth .projects div{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.fourth .projects .row1 div,.row2 div{
+    width: 20rem;
+    margin-top:2rem ;
+    margin-bottom: 3rem;
+    flex-direction: column;
+    border-radius: 4%;
+    background-image: linear-gradient(to bottom,rgba(150, 96, 147, 0.658),rgb(207, 199, 77));
+    box-shadow: 5px 10px 5px #22232586;
+    transition: background 0.5s,transform 0.5s;
+}
+
+.fourth .projects .row1 div h2,.row2 div h2{
+    color:white;
+    text-shadow:6px 7px 4px #22232586;
+}
+.fourth .projects .row1 div p,.row2 div p{
+    color:  #0d4577de;
+}
+.fourth h2,.fourth p,.fourth a{
+    margin: 5px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 1.5rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-decoration: none;
+}
+button{
+    width: 10rem;
+    height: 3rem;
+    align-self: center;
+    font-family: monospace;
+    font-size: 25px;
+    background-color: rgba(19, 63, 121, 0.432);
+    border-radius: 8%;
+    border-style: none;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.521);
+    color:  white;
+    margin-top:1.5rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+button:hover{
+   opacity: 0.6;
+   color: rgb(80, 72, 72);
+   background-color: white;
+}
+.fourth .row1 div:hover,.row2 div:hover{
+    transform: translateY(-20px);
+    background-image: linear-gradient(to bottom,rgba(14, 6, 90, 0.699),rgba(238, 217, 217, 0.719),rgba(151, 16, 61, 0.521));
+    
+}
+
+/*footer*/
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:column;
+    text-align: center;
+    background-image:url("https://img.freepik.com/premium-photo/dark-blue-elegant-future-technology-background-22_769134-486.jpg");
+    background-image: linear-gradient(to bottom,rgb(8, 2, 36),rgba(2, 2, 58, 0.808));
+    background-size: cover;
+    padding-bottom: 3rem;
+}
+footer .contact{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+footer h1{
+    color: white;
+  font-family: cursive;
+  padding: 2rem;
+}
+footer .contact .phone,.mail{
+    display: flex;
+    justify-content:start;
+    padding: 1rem;
+}
+footer .contact .website{
+    display: flex;
+    flex-direction: column;
+}
+footer .contact .one{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.4rem;
+    justify-content: center;
+    color: rgb(33, 193, 199);
+}
+.jc-centre{
+    width:max-content;
+    height: max-content;
+    padding:10px;
+}
+#download{
+    text-decoration: none;
+}
+
+footer .contact .website a{
+    color: #ec708f;
+    text-decoration: none;
+    font-family: cursive;
+    font-size: 1em;
+}
+nav .fas{
+    display: none;
+}
+@media only screen and (max-width:650px){
+    nav .right #home{
+        padding: 20px;
+        padding-right: 40px;
+    }
+    nav .fas{
+        display: block;
+        font-size: 25px;
+    }
+    nav .right ul{
+        background: rgb(34, 32, 36);
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    nav .right ul li{
+        display: block;
+        margin: 25px;
+    }
+    nav .right ul .fas{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    
+    /* ----footer--- */
+    footer .contact{
+        justify-content:left;
+        padding-left: 5vw;
+    }
+}
+@media only screen and (max-width:1036px){
+/* -------first ------- */
+    .first img{
+        width :40vw;
+        border-radius: 0%;
+        margin: 0;
+    }
+    .first .image{
+        display: flex;
+        justify-content:center;
+        padding: 2vh;
+    }
+    .first .text{
+        padding-left: 3vw;
+        margin-top: 0px;
+        width: fit-content;
+    }
+}
+
+
+
+
